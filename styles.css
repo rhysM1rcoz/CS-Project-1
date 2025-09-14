@@ -1,0 +1,196 @@
+
+/* Styles for the body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; 
+  color: #333; /* font color */
+  background: #ffffff; 
+}
+
+.main-header {
+  position: sticky; /* Sticks the header to the top of page when scrolling */
+  top: 0; /* Sticky position top */
+  background: #1E3D59; /* Dark blue background */
+  border-bottom: 1px solid #ccc; /*line to separate header */
+  display: flex; /* Layout children elements side by side */
+  align-items: center; /* center items */
+  justify-content: space-between; /* space between logo and nav */
+  padding: 10px 24px; /* Padding inside */
+}
+
+/* styles for logo */
+.logo a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text */
+}
+
+/* Navigation links */
+nav a {
+  margin: 0px 8px 10px 8px; /* Space around each link */
+  text-decoration: none; /* remove underline */
+  color: #ffffff; /* White text */
+  font-size: 18px; /* Larger text */
+}
+
+/* Headings styles */
+h1, h2 {
+  margin-top: 32px; /* Space above headings */
+  font-size: 2em; /* Bigger font size */
+  font-weight: bold; /* Make text thick */
+}
+
+
+/* Style most sections */
+.actions-section,.call-to-action, .who-section{
+  margin: 32px auto; /* Center horizontally with space above and below */
+  max-width: 1050px; /* Maximum width so content isn’t too wide */
+  padding: 20px; /* Space inside each section */
+  background: #f5f1e9; 
+  border-radius: 8px; /* Rounded corners for nice look */
+}
+
+/* Make some sections layout their children elements side by side */
+.intro-section, .background-section, .about-section, .hws-section {
+  margin: 32px auto; 
+  max-width: 1050px; 
+  padding: 20px;
+  background: #f5f1e9; 
+  border-radius: 8px; 
+  display: flex; /* uses flexbox */
+  gap: 32px;
+}
+
+/* styles info section making it centered and giving it flex row with spacing */
+.info-section {
+  margin: 32px auto;
+  max-width: 1050px;
+  padding: 20px;
+  background: #f5f1e9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between; /* pushes items to edges */
+  align-items: flex-start; /* align items at the top */
+  gap: 20px;
+}
+
+/* Actions section layout */
+.actions-section .actions-content,
+.actions-section .actions-extra {
+  display: flex; /* put children elements in a row */
+  gap: 32px; 
+  margin: 20px 0px;
+}
+
+/* Call-to-action section layout */
+.call-to-action {
+  display: flex; 
+  flex-direction: column; /* Stack vertically */
+  gap: 18px; 
+  align-items: center; 
+  text-align: center; 
+}
+
+
+/* ref section to make it smaller */
+.references-section {
+  margin: 32px auto; 
+  text-align: left;
+  max-width: 150px; 
+  padding: 20px; 
+  background: #f5f1e9; 
+  border-radius: 8px; 
+}
+
+/* decoration for ref links */
+.refrences-section a {
+  text-decoration: none;
+  text-align:left;
+}
+
+/* Text parts of intro, background, about share equal width */
+.intro-content, .background-content, .about-content, .hws-content, .cta-content {
+  flex: 1; /* take equal space */
+}
+
+/* styles info content */
+.info-content {
+  display: flex; /* Horizontal layout */
+  gap: 40px; /* Space between parts */
+}
+
+/* Who section layout with gap and alignment */
+.who-content {
+  display: flex;
+  gap: 32px;
+  margin: 18px 0px;
+  align-items: flex-start; 
+}
+
+/* Image container and image styles */
+
+/* Containers so certain imgs dont take up too much space */
+.intro-image, .bg-images {
+  flex: 1;
+  border-radius: 8px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+/* Style all images so its not too big */
+.intro-image img, .about-image img, .bg-images img, 
+.actions-image img, .cta-image img, .who-image img {
+  max-width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+  border-radius: 8px; 
+  display: block;
+  margin: 0 auto;
+}
+
+/* Map image styles */
+.map img {
+  flex: 1;
+  max-width: 300px; 
+
+}
+
+/*class for bold text */
+.bold {
+  font-weight: bold;
+}
+
+/* Footer text link styles */
+.footerfoot a, .footerfoot span {
+  text-decoration: none; /* No underline */
+  color: white; /* White text */
+}
+
+/* Learn more link color */
+.learnmore a {
+  text-decoration: none; /* No underline */
+  color: blue; /* Blue text */
+}
+
+/* Footer styles */
+.footer {
+  border-top: 1px solid #ccc;
+  gap: 12px; 
+  text-align: center; 
+  margin-top: 32px; /* Margin above */
+  padding: 2px 24px; /* Padding inside */
+  background: #1E3D59; /* Dark blue background */
+}
+
+/* Footer navigation margin */
+.footer-nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Margin and border for about heading */
+.margin-about {
+  margin-top: 100px; /* Space above */
+  background: #ffffff; /* White background */
+  border-bottom: solid 2px #000000; /* Black bottom border */
+}
